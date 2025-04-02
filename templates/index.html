@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Improvement Tool</title>
+    <link rel="stylesheet" href="../static/style.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>ReS.io</h1>
+        <p class="subtitle">Enhance your resume to match your dream job!</p>
+        
+        <!-- Job Description Input -->
+        <div class="input-section">
+            <label for="jobDescription">Job Description:</label>
+            <textarea id="jobDescription" placeholder="Paste job description here" rows="10" cols="50" aria-label="Job Description"></textarea>
+        </div>
+
+        <!-- PDF Upload -->
+        <div class="upload-section">
+            <label for="resumeUpload">Upload Resume (PDF):</label>
+            <div class="upload-box">
+                <input type="file" id="resumeUpload" accept=".pdf" aria-label="Upload Resume" />
+                <span class="upload-text">Drag & drop or click to upload</span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-section">
+            <button id="submitBtn" class="btn-primary">Analyze Resume</button>
+            <button id="clearBtn" class="btn-secondary">Clear</button>
+        </div>
+
+        <!-- Feedback Display -->
+        <div class="feedback-section">
+            <h2>Real-time Feedback:</h2>
+            <div id="feedbackArea" class="feedback-box">
+                <!-- Suggestions will be displayed here -->
+                <p class="placeholder-text">Your feedback will appear here...</p>
+            </div>
+            <div id="errorArea" class="error-box">
+                <!-- Error messages will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

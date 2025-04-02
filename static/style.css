@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #45034a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #9c02b0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Input Sections */
+.input-section, .category-section, .upload-section, .submit-section {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus, select:focus, input[type="file"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #45a049;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    background-color: #8206db; /* Dark Purple */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #6f0470; /* Darker purple */
+    transform: scale(1.1); /* Zoom effect */
+}
+
+button:active {
+    transform: scale(1); /* Reset zoom on click */
+}
+
+/* Feedback Section */
+.feedback-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+}
+
+.feedback-section:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackArea {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+#feedbackArea pre {
+    white-space: pre-wrap;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+/* Error Messages */
+#errorArea {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fde8e6;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    textarea, select, input[type="file"] {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
