@@ -8,7 +8,7 @@ import os
 
 
 # Get OpenAI API key from environment variables
-openai.api_key = "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"
+
 # Initialize Flask app
 app = Flask(__name__, static_folder="static", template_folder="templates")
 CORS(app)  # Enable CORS for frontend-backend communication
